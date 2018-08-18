@@ -139,9 +139,15 @@ Users can create a new ideas which map to an ideas CPT within WordPress.
 * _Actions:_ This can simply trigger a new API call (to update the content)
 * _Task List:_
 -----
-* _User Story 07:_ As a user, I need to be able to login to me account so I can access previously stored ideas
+* _User Story 07:_ As a user, I need to be able to login to my account so I can access previously stored ideas
 * _Actions:_ The login process is handled within the App (via JWT) - so the user can use the app to login.
-* _Task List:_
+* _Task List: 
+  * _Double check that the JWT plugin is installed, activated and properly setup on the WP site.
+  * _The app needs an easy to find login button or icon.
+  * _Clicking the login button or icon will show username and password fields, a Submit button and a forgot password? link.
+  * _The app will send this to WP via the Rest API and a response will be received.
+  * _If successful, the initial app screen will be displayed, listing either the users's previously saved ideas or a message prompting them to create their first idea.
+  * _If the log in comes back with an error, the app will display a message indicating so, but the login form will still be shown.
 -----
 * _User Story 08:_ As a user, I need clear indication of next actions if my login attempt fails
 * _Actions:_ We can flag a failed attempt within the app screen (we are sent an error code via the API)
